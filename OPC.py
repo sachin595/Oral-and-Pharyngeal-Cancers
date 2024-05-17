@@ -71,7 +71,7 @@ st.title('Predictive Analytics for Oral and Pharyngeal Cancers')
 # Creating form for input
 with st.form(key='prediction_form'):
     sex = st.selectbox('Sex', options=['Male', 'Female'])
-    year = st.number_input('Year of Mortality Rate', min_value=1900, max_value=2999)
+    year = st.selectbox('Year of Mortality Rate', options=list(range(1999, 2021)))
     agegroup = st.selectbox('Age Group', options=[
         '1-4 years', '5-9 years', '10-14 years', '15-19 years', '20-24 years', '25-29 years', '30-34 years', '35-39 years', '40-44 years',           '45-49 years', '50-54 years', '55-59 years', '60-64 years', '65-69 years', '70-74 years', '75-79 years', '80-84 years', '85+ years'
     ])
