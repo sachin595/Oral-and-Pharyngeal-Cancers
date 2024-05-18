@@ -104,7 +104,7 @@ if submit_button:
     survival_rate = y_predicted_rounded[0, 1]
 
     # Format the survival rate with percentage
-    formatted_survival_rate = f'{survival_rate * 100:.4f}%'
+    formatted_survival_rate = f'{survival_rate * 100:.2f}%'
 
     # Display results in Streamlit
     st.markdown(f'**Crude Mortality Rate:** Number of deaths per 100,000 individuals in a given year\n\n**{crude_rate}**')
